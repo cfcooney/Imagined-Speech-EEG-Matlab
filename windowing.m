@@ -64,6 +64,6 @@ for f=1:length(folders)
     end
     disp(['Saving data to folder ', folders{f}]); %remove this line
     output_folder = [data_path '/' folders{f}];
-    save([output_folder '/window_data_Test.mat'], 'all_trials'); %Trial
+    save([output_folder '/window_datat.mat'], 'all_trials'); %Trial
     f = f+1;
 end
