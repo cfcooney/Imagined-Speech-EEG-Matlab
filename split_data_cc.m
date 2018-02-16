@@ -20,13 +20,6 @@ for j=1:length(folders)
     EEG = pop_loadset(set_fn);
     data = EEG.data;
     
-    simple = true;
-    if ICA
-        W = EEG.icaweights * EEG.icasphere;
-    else
-        W = eye(62, 62);
-    end
-    
     disp('Splitting the data');
     load([folder '/epoch_inds.mat']);
     
