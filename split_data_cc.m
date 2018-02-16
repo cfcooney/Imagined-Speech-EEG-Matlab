@@ -47,5 +47,5 @@ for j=1:length(folders)
     output_folder = [output_data_path '/' folders{j}];
     save([output_folder '/EEG_Data.mat'], 'EEG_Data');
 
-end
+end 
 
